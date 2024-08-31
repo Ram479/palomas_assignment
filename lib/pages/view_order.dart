@@ -119,24 +119,25 @@ class _ViewOrderPageState extends State<ViewOrderPage>
             trailing: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(
-                  height: 40,
-                  width: MediaQuery.of(context).size.width / 3,
-                  child: ElevatedButton(
-                      onPressed: () {
-                        context.read<ViewOrdersBloc>().add(MarkOrderPaidEvent(
-                              tableID: order.tableId,
-                              orderList: order,
-                            ));
-                      },
-                      child: const Text(
-                        'Mark as Paid',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                        ),
-                      )),
-                ),
+                if (_tabController.index == 0)
+                  SizedBox(
+                    height: 40,
+                    width: MediaQuery.of(context).size.width / 3,
+                    child: ElevatedButton(
+                        onPressed: () {
+                          context.read<ViewOrdersBloc>().add(MarkOrderPaidEvent(
+                                tableID: order.tableId,
+                                orderList: order,
+                              ));
+                        },
+                        child: const Text(
+                          'Mark as Paid',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        )),
+                  ),
                 Text('Bill Amount : \$${order.billAmount}'),
               ],
             ),
