@@ -1,0 +1,64 @@
+{
+  "diningTables": [
+    {
+      "tableCode" : "T1",
+      "roomCode" : "Default"
+    },
+    {
+      "tableCode" : "T2",
+      "roomCode" : "Default"
+    },
+    {
+      "tableCode" : "T3",
+      "roomCode" : "Default"
+    },
+    {
+      "tableCode" : "T4",
+      "roomCode" : "Default"
+    },
+    {
+      "tableCode" : "T5",
+      "roomCode" : "Default"
+    },
+    {
+      "tableCode" : "T6",
+      "roomCode" : "R1"
+    },
+    {
+      "tableCode" : "T7",
+      "roomCode" : "R1"
+    },
+    {
+      "tableCode" : "T8",
+      "roomCode" : "R1"
+    },
+    {
+      "tableCode" : "T9",
+      "roomCode" : "R1"
+    },
+    {
+      "tableCode" : "T10",
+      "roomCode" : "R1"
+    },
+    {
+      "tableCode" : "T11",
+      "roomCode" : "R2"
+    },
+    {
+      "tableCode" : "T12",
+      "roomCode" : "R2"
+    },
+    {
+      "tableCode" : "T13",
+      "roomCode" : "R2"
+    },
+    {
+      "tableCode" : "T14",
+      "roomCode" : "R2"
+    },
+    {
+      "tableCode" : "T15",
+      "roomCode" : "R2"
+    }
+  ]
+}
